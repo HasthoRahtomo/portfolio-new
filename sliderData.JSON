@@ -1,0 +1,18 @@
+[
+    {
+      "image": "./img/project/Burzilla.png",
+      "title": "Burzilla (HTML)",
+      "description": "is a prototype website for a company that sells burgers."
+    },
+    {
+      "image": "./img/project/Fruit information search.png",
+      "title": "Fruit Information Searcher (HTML)",
+      "description": "The Website that will provide information about fruit and unique facts about fruit. Made in full with chatGPT 3.5 to find out how AI can be used in web creation."
+    },
+    {
+      "image": "./img/project/Wajan.png",
+      "title": "Wajan (HTML)",
+      "description": "Wajan Indonesia is a website that provides information about traditional Indonesian food."
+    }
+  ]
+  

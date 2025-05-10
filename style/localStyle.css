@@ -1,0 +1,167 @@
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  padding: 7% 15% 4% 15%;
+}
+
+.terraria-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-underground.png);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.middle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-container-div {
+  margin-top: 7%;
+}
+
+.sliderDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.margin-x-15 {
+  margin-left: 5%;
+  margin-left: 5%;
+}
+.DescBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.top40 {
+  margin-top: 40px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nes-container.is-light {
+  position: relative;
+  margin: 4px;
+  color: #fff;
+  border-color: #fff;
+}
+
+.nes-container.is-light::after {
+  position: absolute;
+  top: -7.2px;
+  right: -7.2px;
+  bottom: -7.2px;
+  left: -7.2px;
+  z-index: -1;
+  content: "";
+  background-color: #fff;
+}
+
+.nes-container.is-light.with-title > .title {
+  color: #212529;
+  background-color: #fff;
+}
+
+.nes-container.is-dark-transparent {
+  position: relative;
+  margin: 4px;
+  color: #fff;
+  background-color: #212529;
+  border-color: #fff;
+}
+
+.nes-container.is-dark-transparent::after {
+  position: absolute;
+  top: -7.2px;
+  right: -7.2px;
+  bottom: -7.2px;
+  left: -7.2px;
+  z-index: -1;
+  content: "";
+  background-color: #212529;
+}
+.nes-container.is-dark-transparent.with-title > .title {
+  color: #fff;
+  background-color: #212529;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.navText:hover {
+  animation: blink 1s steps(1) infinite;
+}
+
+.nes-list.is-disc-light li::before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: -22px;
+  content: "";
+  width: 2px;
+  height: 2px;
+  color: #f0f0f0; /* Warna terang */
+  box-shadow: 8px 2px 0 0 #f0f0f0, 10px 2px 0 0 #f0f0f0, 6px 4px 0 0 #f0f0f0,
+    8px 4px 0 0 #f0f0f0, 10px 4px 0 0 #f0f0f0, 12px 4px 0 0 #f0f0f0,
+    4px 6px 0 0 #f0f0f0, 6px 6px 0 0 #f0f0f0, 8px 6px 0 0 #f0f0f0,
+    10px 6px 0 0 #f0f0f0, 12px 6px 0 0 #f0f0f0, 14px 6px 0 0 #f0f0f0,
+    4px 8px 0 0 #f0f0f0, 6px 8px 0 0 #f0f0f0, 8px 8px 0 0 #f0f0f0,
+    10px 8px 0 0 #f0f0f0, 12px 8px 0 0 #f0f0f0, 14px 8px 0 0 #f0f0f0,
+    6px 10px 0 0 #f0f0f0, 8px 10px 0 0 #f0f0f0, 10px 10px 0 0 #f0f0f0,
+    12px 10px 0 0 #f0f0f0, 8px 12px 0 0 #f0f0f0, 10px 12px 0 0 #f0f0f0;
+}
+
+@supports (-moz-appearance: meterbar) {
+  .nes-list.is-disc-light li::before {
+    box-shadow: 8px 2px 0 0.02em #f0f0f0, 10px 2px 0 0.02em #f0f0f0,
+      6px 4px 0 0.02em #f0f0f0, 8px 4px 0 0.02em #f0f0f0,
+      10px 4px 0 0.02em #f0f0f0, 12px 4px 0 0.02em #f0f0f0,
+      4px 6px 0 0.02em #f0f0f0, 6px 6px 0 0.02em #f0f0f0,
+      8px 6px 0 0.02em #f0f0f0, 10px 6px 0 0.02em #f0f0f0,
+      12px 6px 0 0.02em #f0f0f0, 14px 6px 0 0.02em #f0f0f0,
+      4px 8px 0 0.02em #f0f0f0, 6px 8px 0 0.02em #f0f0f0,
+      8px 8px 0 0.02em #f0f0f0, 10px 8px 0 0.02em #f0f0f0,
+      12px 8px 0 0.02em #f0f0f0, 14px 8px 0 0.02em #f0f0f0,
+      6px 10px 0 0.02em #f0f0f0, 8px 10px 0 0.02em #f0f0f0,
+      10px 10px 0 0.02em #f0f0f0, 12px 10px 0 0.02em #f0f0f0,
+      8px 12px 0 0.02em #f0f0f0, 10px 12px 0 0.02em #f0f0f0;
+  }
+}
