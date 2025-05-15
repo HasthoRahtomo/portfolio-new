@@ -8,7 +8,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
     url(../img/bg-underground.png);
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .experience {
@@ -57,7 +57,7 @@
 .education-container {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .center-horizontal {
@@ -127,8 +127,37 @@
   transition: opacity 0.3s;
 }
 
-.navText:hover {
+.dropdown-item:hover {
   animation: blink 1s steps(1) infinite;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+  pointer-events: none;
+  display: block; /* supaya transisi tetap bisa terjadi */
+  visibility: hidden;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.dropdown-menu.animate-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
 }
 
 .nes-list.is-disc-light li::before {

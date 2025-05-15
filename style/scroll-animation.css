@@ -1,0 +1,56 @@
+/* Transisi default untuk opacity dan transform */
+.component-animate {
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* Animasi Fade In */
+.ani-fade-in {
+  transform: scale(0.95); /* Dimulai dengan sedikit lebih kecil */
+}
+
+/* From Right to Left */
+.ani-right {
+  transform: translateX(100px); /* Mulai dari kanan */
+}
+
+/* From Left to Right */
+.ani-left {
+  transform: translateX(-100px); /* Mulai dari kiri */
+}
+
+/* From Top to Bottom */
+.ani-top {
+  transform: translateY(-100px); /* Mulai dari atas */
+}
+
+/* From Bottom to Top (default jika tidak ada yang ditentukan) */
+.ani-bottom {
+  transform: translateY(100px); /* Mulai dari bawah */
+}
+
+/* Saat elemen terlihat, animasi berjalan */
+.visible.ani-fade-in {
+  opacity: 1;
+  transform: scale(1); /* Akhirnya kembali ke ukuran normal */
+}
+
+.visible.ani-right {
+  opacity: 1;
+  transform: translateX(0); /* Kembali ke posisi awal */
+}
+
+.visible.ani-left {
+  opacity: 1;
+  transform: translateX(0); /* Kembali ke posisi awal */
+}
+
+.visible.ani-top {
+  opacity: 1;
+  transform: translateY(0); /* Kembali ke posisi awal */
+}
+
+.visible.ani-bottom {
+  opacity: 1;
+  transform: translateY(0); /* Kembali ke posisi awal */
+}

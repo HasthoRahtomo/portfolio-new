@@ -53,7 +53,7 @@ const projects = [
     description: "testing script using cucumber and selenium.",
     descriptionDetail: "This project was created to perform automation testing for the demoblaze.com website. This project uses Cucumber, Selenium and restAssured to adapt to perform API and UI testing.",
     descriptionDetail2: "By using Github Action CI/CD, this project can be run without having to clone the project and run locally. The report generated has also been deployed, ensuring that the project can run without having to prepare anything.",
-    githubLink:"https://github.com/HasthoRahtomo/finalproject-jj",
+    githubLink:"https://github.com/HasthoRahtomo/Api-UI-Demoblaze",
   },
   {
     id: 6,

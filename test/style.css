@@ -1,0 +1,49 @@
+.component {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  padding: 40px;
+  margin: 100px auto;
+  width: 80%;
+  background-color: #e0f7fa;
+  border-left: 6px solid #00acc1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade In only */
+.ani-fade-in {
+  transform: none;
+}
+
+/* From Right to Left */
+.ani-input-right {
+  transform: translateX(100px);
+}
+
+/* From Left to Right */
+.ani-input-left {
+  transform: translateX(-100px);
+}
+
+/* From Top to Bottom */
+.ani-top {
+  transform: translateY(-100px);
+}
+
+/* From Bottom to Top (default if none ditentukan) */
+.ani-bottom {
+  transform: translateY(100px);
+}
+
+/* Visible triggers animation */
+.visible.ani-fade-in {
+  opacity: 1;
+}
+
+.visible.ani-input-right,
+.visible.ani-input-left,
+.visible.ani-top,
+.visible.ani-bottom {
+  opacity: 1;
+  transform: translate(0, 0);
+}

@@ -65,11 +65,13 @@ body {
 }
 
 .layer7 {
+  position:fixed;
   z-index: 7;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
-  padding: 5px;
+  padding: 30px;
+  height: fit-content;
 }
 
 /* Animasi per layer */
