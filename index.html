@@ -37,8 +37,50 @@
     <link rel="stylesheet" href="./style/localStyle.css" />
     <link rel="stylesheet" href="./style/typeWritter.css" />
     <link rel="stylesheet" href="./style/projectStyle.css" />
+
+    <style>
+      /* Menghilangkan scrollbar saat loading berjalan */
+      body.is-loading {
+        overflow: hidden;
+      }
+
+      /* Styling Loading Screen */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+        z-index: 99999; /* Memastikan loading screen berada di tumpukan paling atas */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+      }
+
+      /* Animasi Teks Kedap-kedip 8-bit */
+      .blink-text {
+        font-family: "Press Start 2P", cursive;
+        color: white;
+        margin-top: 20px;
+        animation: blinker 1s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
-  <body>
+  <body class="is-loading">
+    <div id="loading-screen">
+      <div class="nes-container is-rounded is-dark is-centered">
+        <i class="nes-icon is-large star"></i>
+        <p class="blink-text">LOADING...</p>
+      </div>
+    </div>
     <div class="parallax-container">
       <div class="layer layer1">
         <img src="./img/parallax/1.png" />
@@ -205,9 +247,10 @@
                   width="120px"
                 />
                 <p>
-                  Conducted manual and automation tests using Selenium, Jira, Google Sheet, 
-                  and Postman for ScyllaX website and mobile, created bug report, communicated with 
-                  stakeholders, created test scenario, and test case. 
+                  Conducted manual and automation tests using Selenium, Jira,
+                  Google Sheet, and Postman for ScyllaX website and mobile,
+                  created bug report, communicated with stakeholders, created
+                  test scenario, and test case.
                 </p>
               </div>
             </div>
@@ -505,5 +548,20 @@
     <script src="./script/projectScript.js"></script>
     <script src="./script/dropdown.js"></script>
     <script src="./script/scroll-animation.js"></script>
+
+    <script>
+      // window.onload akan memastikan semua gambar, font, dan CSS selesai dimuat
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        const body = document.body;
+
+        // Berikan sedikit jeda (opsional) agar animasi loading terlihat mulus
+        setTimeout(() => {
+          loadingScreen.style.opacity = "0";
+          loadingScreen.style.visibility = "hidden";
+          body.classList.remove("is-loading"); // Mengembalikan fungsi scroll
+        }, 500); // delay 0.5 detik
+      });
+    </script>
   </body>
 </html>
