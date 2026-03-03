@@ -119,14 +119,15 @@
             >
               <i class="fa-solid fa-bars fa-2xl"></i>
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#about">About me</a></li>
-              <li>
+            <br />
+            <div class="dropdown-menu">
+              <div>
+                <a class="dropdown-item" href="#about">About me</a>
                 <a class="dropdown-item" href="#experience">Experience</a>
-              </li>
-              <li><a class="dropdown-item" href="#project">Project</a></li>
-              <li><a class="dropdown-item" href="#contact">Contact</a></li>
-            </ul>
+                <a class="dropdown-item" href="#project">Project</a>
+                <a class="dropdown-item" href="#contact">Contact</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -248,10 +249,11 @@
                   width="120px"
                 />
                 <p>
-                  Conducted manual and automation tests using Selenium, Jira,
-                  Google Sheet, and Postman for ScyllaX website and mobile,
-                  created bug report, communicated with stakeholders, created
-                  test scenario, and test case.
+                  Conducted automation tests using Selenium, API test using
+                  Postman, and manual testing. Documented issue with Jira and
+                  Google Sheet for ScyllaX website and mobile, created bug
+                  report, communicated with stakeholders like Developer and
+                  Product owner, created test scenario, and test case.
                 </p>
               </div>
             </div>
@@ -349,9 +351,7 @@
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="prev"
                 >
-                  <span
-                    aria-hidden="true"
-                  >&laquo;</span>
+                  <span aria-hidden="true">&laquo;</span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button
@@ -359,9 +359,7 @@
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="next"
                 >
-                  <span
-                    aria-hidden="true"
-                  >&raquo;</span>
+                  <span aria-hidden="true">&raquo;</span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -404,8 +402,12 @@
               </nav>
             </div>
           </div>
+          <img
+            src="./img/bergelantung.png"
+            style="width: 80px; height: 80px; margin-left: 60px"
+          />
 
-          <div style="margin-top: 60px" class="experience" id="contact">
+          <div class="experience" id="contact">
             <a
               class="nes-btn is-warning component-animate ani-fade-in"
               onclick="document.getElementById('dialog-rounded').showModal()"
@@ -417,23 +419,39 @@
                 <p class="title">My contact</p>
                 <p>Here is my contact.</p>
                 <div class="center-horizontal">
-                  <a href="https://www.instagram.com/ohtsahomothar/" class="nes-btn is-success">
-                      <i class="nes-icon instagram is-large"></i>
+                  <a
+                    href="https://www.instagram.com/ohtsahomothar/"
+                    class="nes-btn is-success"
+                  >
+                    <i class="nes-icon instagram is-large"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/hastho-rahtomo/" class="nes-btn is-warning">
-                      <i class="nes-icon linkedin is-large"></i>
-                  </a>
-                </div>
-                <div class="center-horizontal top20">
-                  <a href="https://github.com/HasthoRahtomo" class="nes-btn is-error">
-                      <i class="nes-icon github is-large"></i>
-                  </a>
-                  <a href="mailto:hastorahtomo89@gmail.com" class="nes-btn is-primary">
-                      <i class="nes-icon gmail is-large"></i>
+                  <a
+                    href="https://www.linkedin.com/in/hastho-rahtomo/"
+                    class="nes-btn is-warning"
+                  >
+                    <i class="nes-icon linkedin is-large"></i>
                   </a>
                 </div>
                 <div class="center-horizontal top20">
-                  <a class="nes-btn" onclick="document.getElementById('dialog-rounded').close()">Cancel</a>
+                  <a
+                    href="https://github.com/HasthoRahtomo"
+                    class="nes-btn is-error"
+                  >
+                    <i class="nes-icon github is-large"></i>
+                  </a>
+                  <a
+                    href="mailto:hastorahtomo89@gmail.com"
+                    class="nes-btn is-primary"
+                  >
+                    <i class="nes-icon gmail is-large"></i>
+                  </a>
+                </div>
+                <div class="center-horizontal top20">
+                  <a
+                    class="nes-btn"
+                    onclick="document.getElementById('dialog-rounded').close()"
+                    >Cancel</a
+                  >
                 </div>
               </form>
             </dialog>
