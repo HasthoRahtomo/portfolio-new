@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -56,7 +56,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+        transition:
+          opacity 0.6s ease-out,
+          visibility 0.6s ease-out;
       }
 
       /* Animasi Teks Kedap-kedip 8-bit */
@@ -110,14 +112,13 @@
       <div class="layer layer7">
         <div>
           <div class="btn-group">
-            <button
-              type="button"
+            <a
               class="nes-btn is-warning dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               <i class="fa-solid fa-bars fa-2xl"></i>
-            </button>
+            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#about">About me</a></li>
               <li>
@@ -345,26 +346,22 @@
                 <div class="carousel-inner" id="carousel-inner"></div>
                 <button
                   class="carousel-control-prev"
-                  type="button"
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
                     aria-hidden="true"
-                  ></span>
+                  >&laquo;</span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button
                   class="carousel-control-next"
-                  type="button"
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
                     aria-hidden="true"
-                  ></span>
+                  >&raquo;</span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -409,43 +406,34 @@
           </div>
 
           <div style="margin-top: 60px" class="experience" id="contact">
-            <button
-              type="button"
+            <a
               class="nes-btn is-warning component-animate ani-fade-in"
-              onclick="document.getElementById('dialog-rounded').showModal();"
+              onclick="document.getElementById('dialog-rounded').showModal()"
             >
               Contact me!
-            </button>
+            </a>
             <dialog class="nes-dialog is-rounded" id="dialog-rounded">
               <form method="dialog">
                 <p class="title">My contact</p>
                 <p>Here is my contact.</p>
                 <div class="center-horizontal">
-                  <a href="https://www.instagram.com/ohtsahomothar/">
-                    <button class="nes-btn is-success">
+                  <a href="https://www.instagram.com/ohtsahomothar/" class="nes-btn is-success">
                       <i class="nes-icon instagram is-large"></i>
-                    </button>
                   </a>
-                  <a href="https://www.linkedin.com/in/hastho-rahtomo/">
-                    <button class="nes-btn is-warning">
+                  <a href="https://www.linkedin.com/in/hastho-rahtomo/" class="nes-btn is-warning">
                       <i class="nes-icon linkedin is-large"></i>
-                    </button>
                   </a>
                 </div>
                 <div class="center-horizontal top20">
-                  <a href="https://github.com/HasthoRahtomo">
-                    <button class="nes-btn is-error">
+                  <a href="https://github.com/HasthoRahtomo" class="nes-btn is-error">
                       <i class="nes-icon github is-large"></i>
-                    </button>
                   </a>
-                  <a href="mailto:hastorahtomo89@gmail.com">
-                    <button class="nes-btn is-primary">
+                  <a href="mailto:hastorahtomo89@gmail.com" class="nes-btn is-primary">
                       <i class="nes-icon gmail is-large"></i>
-                    </button>
                   </a>
                 </div>
                 <div class="center-horizontal top20">
-                  <button class="nes-btn">Cancel</button>
+                  <a class="nes-btn" onclick="document.getElementById('dialog-rounded').close()">Cancel</a>
                 </div>
               </form>
             </dialog>
@@ -454,16 +442,16 @@
       </div>
     </div>
 
-    <a href="#">
-      <button
+    <section>
+      <a
+        href="#"
         id="scrollToTopBtn"
         title="Go to top"
-        type="button"
         class="nes-btn is-warning"
       >
         <img src="./icon/arrow-up-square-svgrepo-com.svg" width="40px" />
-      </button>
-    </a>
+      </a>
+    </section>
 
     <div id="project-modal">
       <div class="modal-content nes-container is-rounded is-dark is-centered">

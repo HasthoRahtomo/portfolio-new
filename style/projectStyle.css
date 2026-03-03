@@ -65,7 +65,6 @@
   right: 20px;
   font-size: 28px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .modal a {
@@ -111,7 +110,6 @@
   top: 10px;
   right: 15px;
   font-size: 20px;
-  cursor: pointer;
 }
 
 /* Modal Image */
